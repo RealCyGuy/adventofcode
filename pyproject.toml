@@ -1,0 +1,15 @@
+[project]
+name = "adventofcode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "utils",
+]
+
+[tool.uv.workspace]
+members = ["utils"]
+
+[tool.uv.sources]
+utils = { workspace = true }
