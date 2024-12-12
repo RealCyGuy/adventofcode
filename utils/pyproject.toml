@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-utils = "utils:main"
+new = "utils.new_day:main"
 
 [build-system]
 requires = ["hatchling"]
