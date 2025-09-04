@@ -1,7 +1,6 @@
 import inspect
 import os
 from pathlib import Path
-from typing import AnyStr
 
 
 def get_importing_file():
@@ -11,7 +10,7 @@ def get_importing_file():
             return frame.filename
 
 
-def get_input(day: int) -> AnyStr:
+def get_input(day: int) -> str:
     file = get_importing_file()
     year = Path(file).parts[-3]
     os.makedirs(os.path.join(os.path.dirname(file), "../inputs"), exist_ok=True)
